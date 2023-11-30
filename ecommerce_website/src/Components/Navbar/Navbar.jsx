@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { IoMdSearch } from "react-icons/io";
 import { BsCart2 } from "react-icons/bs";
 import "./Navbar.css";
+import { AppContext } from "../../AppContext";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
-  const [cartItemCount, setCartItemCount] = useState(2); // Example cart item count
-
+  // Example cart item count
+  const {cart} = useContext(AppContext);
+  console.log(cart)
   return (
     <div>
       <nav className="navbar">
@@ -26,9 +28,9 @@ const Navbar = () => {
         <div className="cart-wrapper">
           <span className="cart-icon">
             <BsCart2 />
-            {cartItemCount > 0 && (
-              <span className="cart-count">{cartItemCount}</span>
-            )}
+           
+              <span className="cart-count">{cart.length}</span>
+         
           </span>
         </div>
         <div className="account-box">

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "../Pages/LandingPage/LandingPage";
 
-import Cartproduct from "../Pages/Viewcart/cartproduct";
+import Cartproduct from "../Pages/Viewcart/Cart";
 import Checkout from "../Pages/checkout/Checkout";
 import Payment from "../Pages/Payment/Payment";
 import Delivery from "../Pages/delivery/Delivery";

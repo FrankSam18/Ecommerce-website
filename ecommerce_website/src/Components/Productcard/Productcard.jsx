@@ -1,44 +1,46 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./ProductCard.css";
 import { MdStarRate } from "react-icons/md";
-
-
-const ProductCard = ({ title, description, rating, image, price }) => {
+import { Link } from "react-router-dom";
+import { AppContext } from "../../AppContext";
+function ProductCard(item) {
+  const { title, rating, image, price, id } = item;
+  const { dispatch } = useContext(AppContext);
   const handleAddToCart = () => {
-    console.log(`Added ${title} to cart`);
+    dispatch({
+      type: "ADD",
+      payload: item,
+    });
   };
-
-  const renderStarRating = () => {
-    const filledStars = Array(Math.round(rating.rate)).fill(
-      <span >
-        <MdStarRate color="#1B81CA" key={rating.rate} />
-      </span>
-      ,
-    );
-    const emptyStars = Array(5 - Math.round(rating.rate)).fill(
-      <span  >
-        <MdStarRate color="gray" key={5 - rating.rate} />
-      </span>
-      ,
-    );
-    return [...filledStars, ...emptyStars];
-  };
-
   return (
     <div className="product-card">
-      <img src={image} alt={title} className="product-image" />
-      <p className="product-title">{title}</p>
-      <p>GHC{price}</p>
-      {renderStarRating()}
+      <Link to={"/product/" + id}>
+        <img src={image} alt={title} className="product-image" />
+      </Link>
+
+      <Link to={"/product/" + id} className="title-text">
+        {title?.length > 20 ? title.substring(0, 20) + "..." : title}
+      </Link>
+
+      <p className="price">Ghc₵{price}</p>
+      <MdStarRate color="#1B81CA" />
+      <MdStarRate color="#1B81CA" />
+      <MdStarRate color="#1B81CA" />
+      <MdStarRate color="#1B81CA" />
+      <MdStarRate color="gray" />
       <div className="rating">
-        {Array.from({ length: rating.rate }, (_, index) => (
+        2 Available
+        {Array.from({ length: rating }, (_, index) => (
           <span key={index} className="rating-icon"></span>
         ))}
       </div>
-      <button onClick={handleAddToCart} className="cart-button">
-        Add to Cart
-      </button>
+      <div style={{ textAlign: "center" }}>
+        <button onClick={handleAddToCart} className="cart-button">
+          Add to Cart
+        </button>
+      </div>
     </div>
   );
-};
+}
+
 export default ProductCard;
