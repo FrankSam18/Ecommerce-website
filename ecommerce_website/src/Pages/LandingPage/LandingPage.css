@@ -1,0 +1,64 @@
+ @import url('https://fonts.googleapis.com/css2?family=Damion&family=Inter&display=swap');
+
+ .top-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .page-title {
+    color: var(--Black, #222);
+    text-align: center;
+    font-family: "Damion";
+    color: #333;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .content {
+    color: var(--Black, #222);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .banner {
+    height: 60vh;
+    width: 100%;
+    background-color: #a52a2a;
+  }
+  .main-image {
+    width: 100%;
+    height: 100%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    width: 80%;
+    margin: 2rem auto;
+  }
+  
+  .grid-item {
+    background-color: #f2f2f2;
+    height: 200px;
+  }
+  
+  .big-item {
+    width: 1440px;
+    height: 477px;
+    flex-shrink: 0;
+  }
+  
+  .main-image2 {
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }

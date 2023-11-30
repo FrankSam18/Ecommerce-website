@@ -1,0 +1,125 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 5px;
+    width: 10%;
+  }
+  
+  .logo {
+    color: #1f71bc;
+  
+    text-align: center;
+    font-family: inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .Retail-btn {
+    color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #1f71bc;
+    width: 148px;
+    height: 40px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  
+  .search-box-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-box {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 380px;
+    height: 38px;
+    flex-shrink: 0;
+    border: 1px solid #1f71bc;
+  
+    background: #fff;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cart-wrapper {
+    color: #1f71bc;
+  }
+  .cart-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 50%;
+  }
+  
+  .account-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-signup-wrapper {
+    margin-right: 10px;
+  }
+  
+  .login-btn {
+    color: var(--Black, #222);
+    text-align: center;
+    font-family: inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .signup-btn {
+    width: 148px;
+    height: 40px;
+    flex-shrink: 0;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #1f71bc;
+    color: #f2f2f2;
+  }
+  
+  .profile-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }

@@ -1,0 +1,14 @@
+.product-card .product-image {
+    width: 200px;
+    height: 200px;
+  }
+  .cart-button {
+    width: 206px;
+    height: 40px;
+    background: #1b81ca;
+    border: 1px solid #1f71bc;
+    color: white;
+  }
+  .product-title{
+    height: 100px;
+  }

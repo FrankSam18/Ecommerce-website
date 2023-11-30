@@ -1,0 +1,31 @@
+.Aux_navbar {
+    background-color: #f2f2f2;
+    padding: 0px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .nav-item {
+    margin: 0 40px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1f71bc;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .nav-link:hover {
+    color: #ff0000;
+  }
