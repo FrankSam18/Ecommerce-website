@@ -7,22 +7,22 @@ const Aux_navbar = () => {
     <nav className="secondary-navbar">
       <ul className="nav-menu">
         <li className="nav-item">
-          <Link to="/women" className="nav-link">
+          <Link to="/products" className="nav-link">
             Women
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/men" className="nav-link">
+          <Link to="/products" className="nav-link">
             Men
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/kids" className="nav-link">
+          <Link to="/products" className="nav-link">
             Kids
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/accessories" className="nav-link">
+          <Link to="/products" className="nav-link">
             Accessories
           </Link>
         </li>

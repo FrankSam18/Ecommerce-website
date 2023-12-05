@@ -5,7 +5,8 @@ import useFetch from "../../Components/hooks/Usefetch";
 import Loading from "../../Components/Loading/Loading";
 import "./Productdescription.css";
 import { MdStarRate } from "react-icons/md";
-import { MdStoreMallDirectory } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+import { MdStoreMallDirectory } from "react-icons/md"
 
 const Productdescription = () => {
   const param = useParams().id;
@@ -28,6 +29,7 @@ const Productdescription = () => {
     <Layout>
       {loading ? (
         <Loading />
+        
       ) : (
         <div className="product-details-container">
           <div className="image-option-box">
