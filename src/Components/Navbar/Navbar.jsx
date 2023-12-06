@@ -12,8 +12,8 @@ const Navbar = () => {
   console.log(cart);
   return (
     <nav className="navbar">
-      <span className="logo">Logo</span>
-      <Link to="/Retail" className="Retail-btn">
+      <Link to="/" className="logo">Logo</Link>
+      <Link to="/products" className="Retail-btn">
         Retail
       </Link>
       <form action="#" className="search-form">
