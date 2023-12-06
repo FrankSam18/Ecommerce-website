@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Cartproduct from "../Pages/Viewcart/Cart";
 import Checkout from "../Pages/Checkout/Checkout";
 import Payment from "../Pages/Payment/Payment";
-import Delivery from "../Pages/delivery/Delivery";
+import Delivery from "../Pages/Delivery/Delivery";
 import Productlist from "../Pages/Productlist/Productlist";
 import Productdescription from "../Pages/ProductDescription/ProductDescription";
 
