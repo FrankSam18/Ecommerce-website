@@ -1,88 +1,127 @@
+h2 {
+  margin-left: 20px;
+}
 .circle-container {
-    width: 1280px;
-    height: 182px;
-    flex-shrink: 0;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.25);
-  }
-  .number-circle1 {
-    border-radius: 50%;
-    margin-left: 5px;
-    width: 100px;
-    height: 100px;
-    flex-shrink: 0;
-    background-color: dodgerblue;
-    color: white;
-    border: 2px solid whitesmoke;
-    color: #fff;
-  
-    text-align: center;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-  .number-circle2 {
-    border-radius: 50%;
-    margin-left: 5px;
-    width: 100px;
-    height: 100px;
-    flex-shrink: 0;
-    background-color: gray;
-    color: white;
-    border: 2px solid whitesmoke;
-    color: #fff;
-  
-    text-align: center;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-  .number-circle3 {
-    border-radius: 50%;
-    margin-left: 5px;
-    width: 100px;
-    height: 100px;
-    flex-shrink: 0;
-    background-color: gray;
-    color: white;
-    color: #fff;
-  
-    text-align: center;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    border: 2px solid whitesmoke;
-  }
-  .line-int {
-    width: 103px;
-    height: 4px;
-    flex-shrink: 0;
-    background: dodgerblue;
-    border: 2px solid dodgerblue;
-  }
-  .identity-container {
-    width: 1280px;
-    height: 200px;
-    flex-shrink: 0;
-    background: #fff;
-    box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.25);
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-    padding: 10px;
-  }
-  .identity-container.secondary-text p {
-    text-align: start;
-  }
-  .identity-container .cart-button {
-    margin-left: 85%;
-  }
+  width: 1280px;
+  height: 182px;
+  flex-shrink: 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  margin-left: 20px;
+  box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.25);
+}
+.number-circle1 {
+  border-radius: 50%;
+  margin-left: 5px;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: #1f71bc;
+  color: white;
+  border: 2px solid whitesmoke;
+  color: #fff;
+
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.number-circle2 {
+  border-radius: 50%;
+  margin-left: 5px;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: gray;
+  color: white;
+  border: 2px solid whitesmoke;
+  color: #fff;
+
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.number-circle3 {
+  border-radius: 50%;
+  margin-left: 5px;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: gray;
+  color: white;
+  color: #fff;
+
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  border: 2px solid whitesmoke;
+}
+.line-int {
+  width: 103px;
+  height: 4px;
+  flex-shrink: 0;
+  background: dodgerblue;
+  border: 2px solid dodgerblue;
+}
+.identity-container {
+  width: 1280px;
+  height: 150px;
+  flex-shrink: 0;
+  background: #fff;
+  box-shadow: 0px 2px 8px -2px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.secondary-text p {
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 1rem;
+}
+.identity-container .cart-button {
+  margin-left: 85%;
+}
+.addup-box {
+  width: 177px;
+  height: 42.187px;
+  flex-shrink: 0;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1.834px 7.337px -1.834px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.title-box {
+  width: 384px;
+  height: 200px;
+  flex-shrink: 0;
+  background: #fff;
+  width: 286px;
+  color: var(--Black, #222);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+  text-align: center;
+  margin-right: 20px;
+}
+.cart-button {
+  margin-top: 1rem;
+}
